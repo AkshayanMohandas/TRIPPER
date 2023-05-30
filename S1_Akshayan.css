@@ -1,0 +1,98 @@
+body{
+    background-color: #999999;;
+    font-family: 'Saira Semi Condensed', sans-serif;
+	background: url(Image/wallpapersden.com_mountain-retreat_5120x2880.jpg) no-repeat;
+	background-size: cover;
+}
+
+.card {
+    font-family: 'Saira Semi Condensed', sans-serif;
+    width: 400px;
+    text-align: center;
+    font-family: arial;
+    position:absolute;
+    background-color: rgb(228, 228, 228);
+    margin-top: 20px;
+    margin-left: 35%;
+    margin-bottom:50px;
+    border-radius: 8px;
+    
+}
+p{
+    margin-top: -20px;
+    font-family: 'Saira Semi Condensed', sans-serif;
+    margin-right: 8px;
+}
+hr{
+    border-top: 1px dashed blue;
+}
+.card_footer{
+    background-color: black;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    
+}
+.info{
+    margin-left: 35px;
+}
+th{
+    text-align: start;
+}
+td{
+    font-family: 'Saira Semi Condensed', sans-serif;
+    text-align: start;
+    padding-left: 10px;
+}
+td,th{
+    padding-bottom: 10px;
+}
+img{
+    margin-top: 20px;
+    box-shadow: 1px 2px lightslategray;
+    border: 1px solid black;
+    border-radius: 5px;
+    transition: .3s;
+}
+img:hover{
+    box-shadow: 5px 5px 20px black;
+    transform: scale(1.005);
+}
+
+
+@media only screen and (max-width: 600px){
+    .card{
+        margin-left: 50px;
+        float: left;
+        position: static;
+    }
+    .homebutton #mybtn{
+        margin-right: 90px;
+        
+    }
+    .footer{
+        padding-left: 100px;
+    }
+}
+.icon{
+    width: 30px;
+    height: 30px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    margin-right: 10px;
+}
+.icon img:hover{
+    background-color: black;
+}
+
+.homebutton{
+    position: relative;
+    float: right;
+    margin-top: 50px;
+    margin-right: 80px;
+}
+#mybtn img{
+    width: 50px;
+    height: 50px;
+    background-color: #8dc3c4;
+    
+}

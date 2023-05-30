@@ -1,0 +1,195 @@
+* {box-sizing:border-box;}
+
+body{margin:0px;
+	background-color:#cccccc;
+	font-family: 'Roboto', sans-serif;
+	width:100%;
+	background-size:cover;
+}
+
+/*Styles to top botton */
+#myBtn {
+	display: none;
+	position: fixed;
+	bottom: 20px;
+	right: 30px;
+	border: none;
+	font-size: 18px;
+	background-color: #bf0010;
+	color: white;
+	padding: 15px;
+	border-radius: 4px;
+	opacity: 0.7;
+}
+
+#myBtn:hover {
+	background-color: #555;
+}
+
+/*Styles to heading*/
+#g_h1{text-align:center;
+	font-size: 50 px;
+	font-family: 'B612';
+	outline: 2px solid white;
+	background-color:white;
+	width:700px;
+	position:absolute;
+	left:350px;}
+
+/*Styles to gallery area*/
+.gallery{
+		width:1150px;
+		height:700px;
+		}
+
+/*Styles to gallery images*/
+.gallery img{width:auto;
+			border:2px solid grey;
+			border-radius:5px;
+			padding:3px;
+			float:right;
+			}
+
+.row1 img{ height:20%;
+			margin:5%;
+			}
+
+.row2 img { height:20%;
+			margin:5%;
+}
+
+.row3 img{ height:20%;
+			margin:5%;}	
+			
+
+/*Styles to drop box*/
+#background,#fontcolor{display:none;
+					color:white;}
+
+/*Styles to drop box*/
+#bg,#font  {float:right;
+			width:90px;
+			border:1px solid grey;
+			padding:6px;
+			margin:2px;
+			color:white;
+			text-align:center;
+			background-color:black;
+			}				
+			
+/* Style the Images in the Modal */
+#southern,#central,#western,#north_western,#sabaragamuwa,#uva,#eastern,#northern,#north_central {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#southern:hover {
+	opacity: 0.4;
+	}
+	
+#central:hover {
+	opacity: 0.4;
+	}
+	
+#western:hover {
+	opacity: 0.4;
+	}
+	
+#north_western:hover {
+	opacity: 0.4;
+	}
+
+#sabaragamuwa:hover {
+	opacity: 0.4;
+	}
+
+#uva:hover {
+	opacity: 0.4;
+	}
+
+#eastern:hover {
+	opacity: 0.4;
+	}
+
+#northern:hover {
+	opacity: 0.4;
+	}
+	
+#north_central:hover {
+	opacity: 0.4;
+	}
+
+/* The Modal-background */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; 
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.95); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+  margin-bottom: 150px;
+  display: block;
+  max-height:60%;
+  max-width:600px;
+  position:absolute;
+  left:33%;
+}
+
+/* Caption of Modal Image*/
+#caption {
+  margin: auto;
+  font-size:20px;
+  display: block;
+  width: 90%;
+  max-width:1000px;
+  text-align: justify;
+  color: #ccc;
+  padding: 10px 0px 100px 170px;
+  height: 150px;
+  position:absolute;
+  top:75%;
+ 
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+			
+			
+			

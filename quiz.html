@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Linking style sheet-->
+    <link rel="stylesheet" href="quiz.css">
+	<link rel="stylesheet" href="maincss.css">
+
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+    
+    <title>Quiz Main</title>
+</head>
+<body>
+    <header>
+            <div class="topnav"> <!-- designing the navigation bar -->
+                <a class="logo" href="homePage.html">&#8376;&reg;I&#8369;&#8369;&euro;&reg;</a> <!-- creating the logo -->
+				<div class="topnav-right">
+				    <a href="homePage.html">Home</a>
+					<a href="provinces.html">Provinces</a>
+					<a href="shop.html">Shop</a>
+                    <a class="active" href="QuizStart.html">Quiz</a>
+                    <a href="sitemap.html">Site Map</a>
+                    <a href="feedback.html">Feedback</a>
+                    <a href="StudentDetails.html">About Us</a>
+					<div class="dropdown">
+						<button class="dropbtn">Travel Guides
+							<i class="fa fa-caret-down"></i>
+						</button>
+					<div class="dropdown-content">
+						<a href="P_Central.html">Central Province</a>
+						<a href="P_Eastern.html">Eastern Province</a>
+						<a href="P_Northern.html">Northern Province</a>
+						<a href="P_North_Central.html">North Central Province</a>
+						<a href="P_North_Western.html">North Western Province</a>
+						<a href="P_Sabaragamuwa.html">Sabaragamuwa Province</a>
+						<a href="P_Southern.html">Southern Province</a>
+						<a href="P_Uva.html">Uva Province</a>
+						<a href="P_Western.html">Western Province</a>
+					</div>
+					</div>
+					</div>
+			</div>
+		</header>
+	<br><br><br>
+    <div class="quizMain">
+        <div class="quizHeader">
+            <h2 class="mainTitle">Quick Quiz</h2>
+            <div class="timer">
+                <div class="timerDesc">
+                    Time Left
+                </div>
+                <div id="timer">
+                </div>
+            </div>
+        </div>
+        <div id="Container1">
+            <form name="form" class="form">
+                <br><br><br>
+                <div class='question1' id="quesOne">
+                    <p class="question">1. What is the legislative capital city of Sri Lanka?</p>
+      
+                    <ul class="option">
+                        <div class="answers">
+                            <input class="answer" type="radio" name="q1" value="2" id="SriJayawardanapuraKotte">
+                            <label for="SriJayawardanapuraKotte" id="correctString1">Sri Jayawardanapura Kotte</label>
+                        </div>
+                        <div class="answers">
+                            <input class="answer" type="radio" name="q1" value="-1" id="Negombo">
+                            <label for="Negombo">Negombo</label>
+                        </div>
+                        <div class="answers">
+                            <input class="answer" type="radio" name="q1" value="-1" id="Kandy">
+                            <label for="Kandy">Kandy</label>
+                        </div>
+                        <div class="answers">
+                            <input class="answer" type="radio" name="q1" value="-1" id="Colombo">
+                            <label for="Colombo">Colombo</label>
+                        </div>
+                    </ul>
+                </div>
+            
+                <div class='question2'>
+                    <p class="question">2. What is the national language of Sri Lanka?</p>
+
+                    <ul class="option">
+                        <div class="answers">
+                            <input class="answer" type="radio" name="q2" value="-1" id="Nepalese">
+                            <label for="Nepalese">Nepalese</label>
+                        </div>
+                        <div class="answers">
+                            <input class="answer" type="radio" name="q2" value="2" id="Sinhalese">
+                            <label id="correctString2" for="Sinhalese">Sinhalese</label>
+                        </div>
+                        <div class="answers">
+                            <input class="answer" type="radio" name="q2" value="-1" id="Persian">
+                            <label for="Persian">Persian</label>
+                        </div>
+                        <div class="answers">
+                            <input class="answer" type="radio" name="q2" value="-1" id="Mandarin">
+                            <label for="Mandarin">Mandarin</label>
+                        </div>
+                    </ul>
+                </div>
+          
+                <div class='question3'>
+                    <p class="question">3. What is the currency of Sri Lanka?</p>
+
+                    <ul class="option">
+                        <div class="answers">
+                            <input class="answer" type="radio" name="q3" value="2" id="Rupee">
+                            <label id="correctString3" for="Rupee">Rupee</label>
+                        </div>
+                        <div class="answers">
+                            <input class="answer" type="radio" name="q3" value="-1" id="Euro">
+                            <label  for="Euro">Euro</label>
+                        </div>
+                        <div class="answers">
+                            <input class="answer" type="radio" name="q3" value="-1" id="Yen">
+                            <label for="Yen">Yen</label>
+                        </div>
+                        <div class="answers">
+                            <input class="answer" type="radio" name="q3" value="-1" id="Dollar">
+                            <label for="Dollar">Dollar</label>
+                        </div>
+                    </ul>
+                </div>
+         
+                <div class='question4'>
+                    <p class="question">4. How was Sri Lanka formerly known?</p>
+      
+                    <ul class="option">
+                        <div class="answers">
+                            <input class="answer" type="radio" name="q4" value="-1" id="Burma">
+                            <label for="Burma">Burma</label>
+                        </div>
+                        <div class="answers">
+                            <input class="answer" type="radio" name="q4" value="-1" id="Formosa">
+                            <label for="Formosa">Formosa</label>
+                        </div>
+                        <div class="answers">
+                            <input class="answer" type="radio" name="q4" value="2" id="Ceylon">
+                            <label id="correctString4" for="Ceylon">Ceylon</label>
+                        </div>
+                        <div class="answers">
+                            <input class="answer" type="radio" name="q4" value="-1" id="Nyasaland">
+                            <label for="Nyasaland">Nyasaland</label>
+                        </div>
+                    </ul>
+                </div>
+         
+                <div class='question5'>
+                    <p class="question">5. What is the largest city in Sri Lanka?</p>
+
+                    <ul class="option">
+                        <div class="answers">
+                            <input type="radio" class="answer" name="q5" value="2" id="Anuradhapura">
+                            <label id="correctString5" for="Anuradhapura">Anuradhapura</label>
+                        </div>
+                        <div class="answers">
+                            <input type="radio" class="answer" name="q5" value="-1" id="Kandy1">
+                            <label  for="Kandy1">Kandy</label>
+                        </div>
+                        <div class="answers">
+                            <input type="radio" class="answer" name="q5" value="-1" id="Galle">
+                            <label for="Galle">Galle</label>
+                        </div>
+                        <div class="answers">
+                            <input type="radio" class="answer" name="q5" value="-1" id="Colombo1">
+                            <label for="Colombo1">Colombo</label>
+                        </div>
+                    </ul>
+                </div>
+             
+                <div class='question6'>
+                    <p class="question">6. What are the official languages in Sri Lanka?</p>
+
+                    <ul class="option">
+                        <div class="answers">
+                            <input type="radio" class="answer" name="q6" value="-1" id="SinEng">
+                            <label for="SinEng">Sinhala and English</label>
+                        </div>
+                        <div class="answers">
+                            <input type="radio" class="answer" name="q6" value="-1" id="SinHin">
+                            <label for="SinHin">Sinhala and Hindi</label>
+                        </div>
+                        <div class="answers">
+                            <input type="radio" class="answer" name="q6" value="-1" id="TamHin">
+                            <label for="TamHin">Tamil and Hindi</label>
+                        </div>
+                        <div class="answers">
+                            <input type="radio" class="answer" name="q6" value="2" id="SinTam">
+                            <label id="correctString6" for="SinTam">Sinhala and Tamil</label>
+                        </div>
+                    </ul>
+                </div>
+             
+                <div class='question7'>
+                    <p class="question">7. In which year did Sri Lanka become a member of the United Nations?</p>
+
+                    <ul class="option">
+                        <div class="answers">
+                            <input type="radio" class="answer" name="q7" value="2" id="1955">
+                            <label id="correctString7" for="1955">1955</label>
+                        </div>
+                        <div class="answers">
+                            <input type="radio" class="answer" name="q7" value="-1" id="1960">
+                            <label for="1960">1960</label>
+                        </div>
+                        <div class="answers">
+                            <input type="radio" class="answer" name="q7" value="-1" id="1947">
+                            <label for="1947">1947</label>
+                        </div>
+                        <div class="answers">
+                            <input type="radio" class="answer" name="q7" value="-1" id="1948">
+                            <label for="1948">1948</label>
+                        </div>
+                    </ul>
+                </div>
+          
+                <div class='question8'>
+                    <p class="question">8. In how many provinces is Sri Lanka divided?</p>
+
+                    <ul class="option">
+                        <div class="answers">
+                            <input type="radio" class="answer" name="q8" value="-1" id="8">
+                            <label for="8">8 provinces</label>
+                        </div>
+                        <div class="answers">
+                            <input type="radio" class="answer" name="q8" value="2" id="9">
+                            <label id="correctString8" for="9">9 provinces</label>
+                        </div>
+                        <div class="answers">
+                            <input type="radio" class="answer" name="q8" value="-1" id="19">
+                            <label for="19">19 provinces</label>
+                        </div>
+                        <div class="answers">
+                            <input type="radio" class="answer" name="q8" value="-1" id="20">
+                            <label for="20">20 provinces</label>
+                        </div>
+                    </ul>
+                </div>
+        
+                <div class='question9'>
+                    <p class="question">9. Which strait separates Sri Lanka from India?</p>
+
+                    <ul class="option">
+                        <div class="answers">
+                            <input type="radio" class="answer" name="q9" value="-1" id="DavisStrait">
+                            <label for="DavisStrait">Davis Strait</label>
+                        </div>
+                        <div class="answers">
+                            <input type="radio" class="answer" name="q9" value="2" id="PalkStrait">
+                            <label id="correctString9" for="PalkStrait">Palk Strait</label>
+                        </div>
+                        <div class="answers">
+                            <input type="radio" class="answer" name="q9" value="-1" id="JohoreStrait">
+                            <label for="JohoreStrait">Johore Strait</label>
+                        </div>
+                        <div class="answers">
+                            <input type="radio" class="answer" name="q9" value="-1" id="CookStrait">
+                            <label for="CookStrait">Cook Strait</label>
+                        </div>
+                  </ul>
+                </div>
+        
+                <div class='question10'>
+                    <p class="question">10. Which of the following is the tallest point in Sri Lanka?</p>
+                    <ul class="option">
+                        <div class="answers">
+                            <input type="radio" class="answer" name="q10" value="-1" id="Jaffna">
+                            <label for="Jaffna">Jaffna</label>
+                        </div>
+                        <div class="answers">
+                            <input type="radio" class="answer" name="q10" value="-1" id="APeak">
+                            <label for="APeak">Adam's peak</label>
+                        </div>
+                        <div class="answers">
+                            <input type="radio" class="answer" name="q10" value="-1" id="Hatton">
+                            <label for="Hatton">Hatton</label>
+                        </div>
+                        <div class="answers">
+                            <input type="radio" class="answer" name="q10" value="2" id="Pidurutalagala">
+                            <label id="correctString10" for="Pidurutalagala">Pidurutalagala</label>
+                        </div>
+                    </ul>
+                </div>
+                <div class="submitter"><!--this.disable will make the form submit only once-->
+                    <input class="button" id="submitButton" onClick="submitQuiz();this.disabled = true;" type="button" value="Submit">
+                </div>
+                <br>
+                <a class="backTop" href="#quesOne">Back to the top</a>
+            </form>
+         
+        </div>
+    </div>
+    <div class="quizResult">
+        <!--show result-->
+        <div id="showAnswer" style="display: none;">
+            <div class="resultTitle">
+                <h3 id="resultText">You've completed the quiz!</h3>
+                <br><p>Your results</p>
+            </div>
+
+            <div class="quizAnswers" id="correctAnswer1"></div>
+            <div class="quizAnswers" id="correctAnswer2"></div>
+            <div class="quizAnswers" id="correctAnswer3"></div>
+            <div class="quizAnswers" id="correctAnswer4"></div>
+            <div class="quizAnswers" id="correctAnswer5"></div>
+            <div class="quizAnswers" id="correctAnswer6"></div>
+            <div class="quizAnswers" id="correctAnswer7"></div>
+            <div class="quizAnswers" id="correctAnswer8"></div>
+            <div class="quizAnswers" id="correctAnswer9"></div>
+            <div class="quizAnswers" id="correctAnswer10"></div>
+        
+            <!--show score -->
+            <div class="quizScore">
+                <h2 id="userScore"></h2>
+            </div>
+     
+      
+            <input type="button" value="Play Again" onclick="location.reload();" class="button" id="resetButton">
+            <!--refresh the page-->
+
+            <!--show quiz button-->
+            <input type="button" value="Show Answers" class="button" id="show">
+      
+        </div>
+    </div>
+    <script src="quiz.js"></script>
+	<br><br><br><br><br><br><br>
+		<div id="footerText" class="footer">
+		
+		<br>
+		<div>
+		<span><br>
+			
+				Need Help?<br>Call Us:<br>0112777000<br><br>
+				General Enquiries:<br>tripper@hotmail.com
+		</span>
+		</div>
+		<div>
+		<span><br><br>
+	
+		<label for="email1">Get updates directly to your inbox:</label>
+		<input type="text" style="width:200px;" name="signup" id="email1" value="Type your Email-address">
+		<input type="submit" class="submit" value="Sign Up" style="background-color:#66a3ff" onclick="submit()"><br><br>
+		&copy; 2022 TRIPPER COMPANY.ALL RIGHTS RESERVED.<br><br>
+		<a href="S3_Naveen.html" class="bottom-links" onclick="openNav()"> Page Editor </a>
+		<a href="Sitemap.html" class="bottom-links">Sitemap |</a>
+		<a href="#" class="bottom-links"> Privacy Policy |</a>
+		<a href="#" class="bottom-links"> Terms and Conditions |</a>
+		
+	
+	</span>
+	</div>
+	</div>
+</body>
+</html>

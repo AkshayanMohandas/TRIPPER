@@ -1,0 +1,206 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+	font-family: 'Roboto', sans-serif;
+    background-image: url('Image/quizbg.png');
+	background-position: center;
+
+}
+img{
+    width: 50%;
+    height: auto;
+}
+h1{
+	padding: 0;
+    margin: 0 0 15px 0;
+	font-family: Luckiest Guy;
+}
+p{
+    padding: 0;
+    margin: 0 0 15px 0;
+    color: #18181a;
+    font-weight: 300;
+	font-family: Josefin Slab;
+}
+
+/*classes*/
+.container{
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.titleSection{
+	text-align:center;
+	text-transform: uppercase;
+	font-size: 35px;
+}
+.teamDescription{
+	text-align:center;
+	font-size: 25px;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.column{
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.member{
+    margin-bottom:30px;
+	position: relative;
+    margin-bottom: 30px;
+    overflow: hidden;
+	text-align:center;
+}
+
+.member {
+	font-size: 0;
+    overflow: hidden;
+	text-align:center;
+}
+
+.member .member-img1 img{
+    width: 110%;
+    height: 110%;
+	transition: all .3s;
+	text-align:center;
+}
+
+.member .member-img2 img{
+    width: 100%;
+    height: 100%;
+	transition: all .3s;
+	text-align:center;
+}
+.member .member-img3 img{
+    width: 108%;
+    height: 108%;
+	transition: all .3s;
+	text-align:center;
+}
+.member .member-img4 img{
+    width: 114%;
+    height: 114%;
+	transition: all .3s;
+	text-align:center;
+}
+
+.member:hover img{
+	transform:scale(1.2);
+}
+
+
+.member-desc p,h2{
+	font-size: 15px;
+}
+.member .member-desc{
+	position: absolute;
+    top: 15px;
+    right: 15px;
+    bottom: 15px;
+    left: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: rgba(0, 0, 0, .5);
+    overflow: hidden;
+    transition: all .3s ease-in;
+    opacity: 0;
+}
+.member.member-desc .inner{
+	position: absolute;
+    padding: 15px;
+    z-index: 1;
+}
+.member .member-desc:before,
+.member .member-desc:after{
+	position: absolute;
+    display: block;
+    width: 100%;
+    height: 0;
+    content: '';
+}
+.member .member-desc:before{
+	border-top: 3px solid #ffffff;
+    border-right: 3px solid #ffffff;
+    left: -100%;
+    top: 0;
+}
+.member .member-desc:after{
+	border-bottom: 3px solid #ffffff;
+    border-left: 3px solid #ffffff;
+    left: 100%;
+    bottom: 0;
+}
+.member:hover .member-desc{
+	opacity: 1;
+}
+.member:hover .member-desc:before,
+.member:hover .member-desc:after{
+	animation-delay: .1s;
+    animation-duration: .5s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+.member .member-desc h2{
+	height: 60px;
+    color: #ffffff;
+    font-size: 20px;
+    margin: 0;
+}
+
+.member .member-desc p{
+	color: #ffffff;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+/* Mobile Responsive */
+/*https://www.w3schools.com/css/css_rwd_mediaqueries.asp*/
+@media (min-width: 576px){
+    .container{
+        max-width: 540px;
+    }
+    .column{
+        max-width: 50%;
+    }
+}
+@media (min-width: 768px){
+    .container{
+        max-width: 720px;
+    }
+    .column{
+        max-width: 33.333333%;
+    }
+}
+@media (min-width: 992px){
+    .container{
+        max-width: 960px;
+    }
+    .column{
+        max-width: 25%;
+    }
+}
+@media (min-width: 1200px){
+    .container{
+        max-width: 1140px;
+    }
+   
+}

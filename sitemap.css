@@ -1,0 +1,41 @@
+body{
+	background-image:url("Image/sitemapbg.png");
+    font-family: 'Oswald', sans-serif;
+}
+
+
+#home{
+    fill:rgb(58, 58, 61);
+    stroke:rgb(59, 56, 57);
+    stroke-width:5;
+    opacity:0.75;
+    transition: 0.5s;
+}
+#homeG:hover text,#homeG:hover rect{
+    opacity:1;
+    cursor: pointer;
+}
+.firstdiv{
+    fill: #346465;
+    opacity: .75;
+    transition: 0.5s;
+}
+.firstDivisionG:hover text, .firstDivisionG:hover rect{
+    opacity: 1;
+    cursor: pointer;
+}
+
+line{
+    stroke:rgb(0, 0, 0);
+    stroke-width:2;
+}
+.province{
+    fill: #8dc3c4;
+    opacity: .75;
+    transition: 0.5s;
+}
+
+.pages:hover rect, .pages:hover text {
+    opacity: 1;
+    cursor: pointer;
+}

@@ -1,0 +1,142 @@
+.rating {/* Style the stars for rating */
+  position:absolute;
+  transform:translate(-50%,-50%) rotateY(180deg);
+  display:flex;
+  margin-left:14%;
+  margin-top:5.0%;
+}
+.rating input{
+	display:none;
+}
+.rating label{
+	display:block;
+	cursor:pointer;
+	width:50px;
+}
+.rating label:before{
+	content: "\2605";
+	position: relative;
+	display:block;
+	font-size:50px;
+	color:#fff;
+	margin-left: -20px;
+
+}
+.rating label:after{
+	content: "\2605";
+	position: absolute;
+	display:block;
+	font-size:50px;
+	color:#D4AC0D;
+	top:0;
+	opacity:0;
+	transition:0.3s;
+	text-shadow:0 2px 5px rgb(0,0,0,0.5);
+	margin-left: -20px;
+}
+.rating label:hover:after,
+.rating label:hover ~ label:after,
+.rating input:checked ~ label:after{
+	opacity:1;
+}
+
+.form1 input {
+  vertical-align: middle;
+  margin: 5px 10px 5px 0;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+.form1 button {/* Style the submit button */
+  padding: 10px 20px;
+  background-color: #8dc3c4;
+  border: 1px solid #ddd;
+  color: white;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-image:url("Image/feedbackbg.png");
+	height :100vh;
+	-webkit-background-size:cover ;
+	background-size :cover ;
+	background-position: center center ;
+  
+}
+
+textarea{
+	background-color:white;
+	width:50%;
+	border:none;
+	opacity:2.0;
+}
+
+label {
+	margin-right: 15px;
+	line-height: 50px;
+}
+
+
+button{
+	color: white;
+	background-color:rgba(70, 134, 134,0.4 );
+	padding: 10px;
+	margin:3%;
+	border:2px solid rgba(70, 134, 134,0.6);
+	font-family: 'Oswald', sans-serif;
+	text-align: center;
+	font-size:17px;
+	float:right;
+	width:100px;
+}
+
+input[type=text]{
+	border:none;
+	width:60%;
+	height:30px;
+}
+
+input[type=email]{
+	border:none;
+	width:60%;
+	height:30px;}		
+
+legend{
+	color: white;
+	background-color: #346465;
+	padding: 0.5%;
+	font-size: 25px;/*font size of legend*/
+	margin-left:3%;
+	font-family: 'Oswald', sans-serif;
+}
+
+fieldset{
+	opacity:0.75;
+	margin:0% 20% 5% 20%;
+	font-size:20px; /* font size of form content*/
+	border:4px solid #346465;
+	font-family: 'Oswald', sans-serif;
+	background-color:rgb(141, 195, 196, 0.8);
+	padding-top:2%;
+}
+
+button:hover{
+	border-color:#346465;
+	color: #346465;
+	cursor:pointer;
+}
+
+#div3{
+  float:left;
+  margin:1%;
+  color:black;
+ }
+
+#div4{
+  margin:1%;
+  padding-left:10px;
+}
+
+
+
