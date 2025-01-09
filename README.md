@@ -1,6 +1,6 @@
 # Tripper - A Tourism Website  
 
-Tripper is a web application designed to enhance the tourism experience by providing users with a platform to explore destinations, purchase travel-related products, and plan their trips. Developed as part of a team project during our Software Engineering studies at the Informatics Institute of Technology (IIT), Sri Lanka, Tripper showcases modern web development practices and teamwork.
+Tripper is a web application designed to enhance the tourism experience by providing users with a platform to explore destinations, purchase travel-related products, and plan their trips. Developed as part of a team project during my Software Engineering studies at the Informatics Institute of Technology (IIT), Sri Lanka, Tripper showcases modern web development practices and teamwork.
 
 ---
 
